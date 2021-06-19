@@ -1,0 +1,33 @@
+<!-- With parameters -->
+@Test(data=hello)
+<p>Param 1</p>
+@C1(data=123,test=hello,w1=world,s2=test)
+<code>Param 4</code>
+<!-- Multiple decorators -->
+@C2(data=desert)
+@C3(param1=1,param2=2)
+<pre>Test</pre>
+<!-- Parameters with spaces and newlines -->
+@D1(
+    data=2,
+    param=hello,
+    param2=with
+)
+<i>D1</i>
+<!-- Parameters with spaces and newlines, mulitple decorators -->
+@E1(
+param1=hello world
+)
+@E2(
+date=21.01.2020,
+    age=30
+)
+<u>E1,E2</u>
+<!-- Parameters with double quotes -->
+@P1(param1="P1\"test,123123,23")
+<strong>P1</strong>
+@P2(
+param1="P1\"test,123123,23",
+param2=abc123
+)
+<strong>P2</strong>

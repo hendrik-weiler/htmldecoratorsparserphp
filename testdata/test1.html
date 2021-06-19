@@ -1,0 +1,33 @@
+<!-- Simple parsing of non parameterzied decorators -->
+@Navigation()
+<aside></aside>
+@Test()<p></p>
+@Without
+<p>Hello World</p>
+@WithoutInline<h1>Test</h1>
+@Dec with spaces
+<i>Italic</i>
+@Dec with spaces inline<u>Underlined</u>
+@DecWithMoreAttr
+<pre class="test" data-index="1"></pre>
+<!-- Multiple decorators without parameters -->
+@T1
+@T2
+<p>Multiple without parameters</p>
+@T3()
+@T4()
+<code>Multiple with brackets</code>
+@R1
+@R2()
+<code>Multiple brackets and no brackets round 1</code>
+@R3()
+@R4
+<code>Multiple brackets and no brackets round 2</code>
+@C1()
+@C2
+@C3()
+@C4()
+@C5
+<code>Multiple brackets and no brackets round 3</code>
+@G1@G2()@G3
+<code>Multiple brackets and no brackets inline round 4</code>
